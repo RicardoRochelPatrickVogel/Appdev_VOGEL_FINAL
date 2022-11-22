@@ -8,7 +8,7 @@ import { ChildrenOutletContexts } from '@angular/router';
 })
 
 export class AppComponent {
-	page_title = 'Introduction to Web App Development';
+	page_title = 'Patrick Vogel';
 
 	constructor(private contexts: ChildrenOutletContexts) { }
 }
