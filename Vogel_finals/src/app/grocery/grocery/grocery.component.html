@@ -17,9 +17,9 @@
 				<td>{{grocery.type}}</td>
 				<td>{{grocery.name}}</td>
 				<td>
-					<button type="button" class="btn btn-outline-success actions" [routerLink]="['/grocery', grocery.id]"><i class="bi bi-info-circle"></i>&nbsp; View</button>
+					<button type="button" class="btn btn-info" [routerLink]="['/grocery', grocery.id]"><i class="bi bi-info-circle"></i>&nbsp; View</button>
 					&nbsp;
-					<button type="button" class="btn btn-outline-warning actions"><i class="bi bi-trash"></i>&nbsp; Delete</button>
+					<button type="button" class="btn btn-danger"><i class="bi bi-trash"></i>&nbsp; Delete</button>
 				</td>
 			</tr>
 		</tbody>

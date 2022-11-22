@@ -38,21 +38,3 @@ const appRoutes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-
-/*
-const routes: Routes = [
-  {path: 'home_page', component: HomepageComponent},
-  {path: 'navigation', component: NavigationComponent},
-  {path: 'products_lists', component: ProductsListComponent},
-  {path: 'product_details', component: ProductDetailsComponent},
-  {path: 'accounts', component: AccountsComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'register', component: RegisterComponent},
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes,)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
-*/

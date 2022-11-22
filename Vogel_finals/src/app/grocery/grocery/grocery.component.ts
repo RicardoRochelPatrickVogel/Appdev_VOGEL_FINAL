@@ -14,7 +14,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class GroceryComponent implements OnInit {
 
-  page_title = "Current Item List"
+  page_title = "Grocery list"
   groceries$!: Observable<Grocery[]>;
 
   selectedId = 0;
