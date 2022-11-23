@@ -1,7 +1,8 @@
-<div class='jumbotron' *ngIf="grocery$ | async as grocery">
 
+<div class='jumbotron' *ngIf="grocery$ | async as grocery">
+<!--
 	<h2>{{page_title}} for <span>{{grocery.id}}</span></h2>
-	<!-- Row 1 -->
+	
 	<div class="row">
 		<div class="col">
 			<div class="form-floating mb-3">
@@ -10,12 +11,82 @@
 			</div>
 		</div>
 	</div>
-	<!-- Row 2 -->
+	
 	<div class="row">
 		<div class="col d-grid gap-2 d-md-flex justify-content-md-end">
 			<button type="button" (click)="gotoGroceries(grocery)" class="btn btn-success">Save Update</button>
 			<button type="button" class="btn btn-warning">Clear Form</button>
 		</div>
+	</div> 
+
+</div>
+-->
+
+<header class="fw-bolder p-1 fs-4"> View Details</header>
+<div class="row">
+  <div class="col">
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Grocery ID"
+			 [(ngModel)]="grocery.id"> 
+			 <label for="floatingid">Grocery Id</label>
 	</div>
-	
+	</div>
+</div>
+
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Type"
+			 [(ngModel)]="grocery.type">
+			 <label for="floatingbrand">Type</label>
+	</div>
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Grcery item name"
+			 [(ngModel)]="grocery.name">
+			 <label for="floatingsize">Name</label>
+	</div>
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Description"
+			 [(ngModel)]="grocery.description">
+			 <label for="floatingcolor">Description</label>
+	</div>
+	<div class="form-floating mb-3">
+		<input type="text"
+			   class="form-control"
+			   id="floatingCode"
+			   placeholder="Unit Price"
+			   [(ngModel)]="grocery.unit_price">
+			   <label for="floatingcolor">Unit Price</label>
+	  </div>
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Retail Prize"
+			 [(ngModel)]="grocery.retail_price">
+			 <label for="floatingprize">Retail Prize</label>
+	</div>
+	<div class="form-floating mb-3">
+	  <input type="text"
+			 class="form-control"
+			 id="floatingCode"
+			 placeholder="Manufacturing Company"
+			 [(ngModel)]="grocery.manufacturing_company">
+			 <label for="floatingorigin">Company</label>
+	</div>     
+	<div class="modal-footer">
+	  <button type="button"  class="btn btn-secondary" rou>Close</button>
+	  <button type="button" class="btn btn-primary">Save changes</button>
+	</div>
+
 </div>

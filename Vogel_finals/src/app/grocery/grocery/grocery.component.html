@@ -1,4 +1,40 @@
 <br/>
+
+<div class="col 6">
+
+	<div class="container  mt-3">
+		<div class="fs-2 fw-bolder text-white bg-dark ps-3">Grocery List</div>
+		<table class="table table-bordered text-center">
+			<thead>
+			<tr>
+				<th scope="col">ID</th>
+				<th scope="col">TYPE</th>
+				<th scope="col">NAME</th>     
+				<th scope="col">ACTIONS</th>          
+			</tr>
+			</thead>
+			<tbody>
+			<tr *ngFor="let grocery of groceries$ | async" [class.selected]="grocery.id === selectedId">
+				<th scope="row"><a [title]="grocery.id">{{grocery.id}}</a></th>
+				<td>{{grocery.type}}</td>
+				<td>{{grocery.name}}</td>
+				<td>
+					  <button type="button" class="btn btn-info"
+						  [routerLink]="['/grocery', grocery.id]">
+								  <i class="bi bi-info-circle"></i>View 
+					  </button>
+					  <button type="button" class="btn btn-danger">
+								  <i class="bi bi-trash"></i>Delete 
+					</button>
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+  
+  </div>
+  
+<!--
 <div class="container">
 	<h3>{{page_title}}</h3>
 
@@ -25,3 +61,4 @@
 		</tbody>
 	</table>
 </div>
+-->

@@ -9,6 +9,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { GroceryComponent } from './grocery/grocery/grocery.component';
+import { GroceryDetailsComponent } from './grocery/grocery-details/grocery-details.component';
 
 import {SelectivePreLoadingStategyService} from './selective-preloading-strategy.service';
 
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
   {path: 'accounts', component: AccountsComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'grocery', component: GroceryComponent}
+  {path: 'grocery', component: GroceryComponent},
+  {path: 'grocery_details', component: GroceryDetailsComponent}
 ];
 
 @NgModule({

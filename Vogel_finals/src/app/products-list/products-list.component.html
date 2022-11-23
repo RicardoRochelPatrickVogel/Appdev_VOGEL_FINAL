@@ -1,21 +1,29 @@
+<br/>
+
+<div class="col 6">
+
 <app-product-details [grocery]="selectedGrocery"></app-product-details>
 <div class="container">
+	<div class="fs-2 fw-bolder text-white bg-dark ps-3">Grocery List</div>
 	<table class="table table-hover">
 		<thead>
 			<tr>
-			<th scope="col">ID</th>
-			<th scope="col">Name</th>
-			<th scope="col">Unit Price</th>
-			<th scope="col">More Info</th>
+			<th scope="col">ID:</th>
+			<th scope="col">Name:</th>
+			<th scope="col">Type:</th>
+			<th scope="col">More Info:</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr *ngFor ="let grocery of groceries">
 			<th scope="row">{{grocery.id}}</th>
 			<td>{{grocery.name}}</td>
-			<td>{{grocery.unit_price}}</td>
+			<td>{{grocery.type}}</td>
 			<td>
-				<button type="button" class="btn btn-info" data-bs-target="#exampleDetails" data-bs-toggle="modal" [class.selected]="grocery === selectedGrocery" (click)="onSelect(grocery)">Details</button>
+				<button type="button" class="btn btn-info" data-bs-target="#exampleDetails" data-bs-toggle="modal" [class.selected]="grocery === selectedGrocery" (click)="onSelect(grocery)">View</button>
+				<button type="button" class="btn btn-danger">
+					<i class="bi bi-trash"></i>Delete 
+	  </button>
 			</td>
 			</tr>
 			</tbody>

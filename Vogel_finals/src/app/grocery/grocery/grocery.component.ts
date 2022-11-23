@@ -14,7 +14,7 @@ import { switchMap } from 'rxjs/operators';
 })
 export class GroceryComponent implements OnInit {
 
-  page_title = "Grocery list"
+  page_title = "Vogel's Grocery Store"
   groceries$!: Observable<Grocery[]>;
 
   selectedId = 0;
@@ -31,5 +31,6 @@ export class GroceryComponent implements OnInit {
       })
     );
   }
+  
 
 }
