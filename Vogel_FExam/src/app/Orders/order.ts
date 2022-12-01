@@ -1,4 +1,4 @@
-export interface orderParent {
+export interface Order {
     id: number;
 	item: {
 		name: string,

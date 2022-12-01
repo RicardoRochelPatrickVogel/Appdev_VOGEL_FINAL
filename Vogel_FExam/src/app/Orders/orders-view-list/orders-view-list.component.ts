@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OrderService } from '../orders.service'; 
 
-import { orderParent } from '../order'; 
+import { Order } from '../order'; 
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
@@ -16,11 +16,11 @@ export class OrdersViewListComponent implements OnInit{
   olist = 'Orders List';
   slist = 'Shipping List';
   
-  order$!: Observable<orderParent []>;
+  order$!: Observable<Order []>;
 
-  order: orderParent[] = [];
+  order: Order[] = [];
 
-  selectOrder?: orderParent;
+  selectOrder?: Order;
 
   SelectedId = 0;
 

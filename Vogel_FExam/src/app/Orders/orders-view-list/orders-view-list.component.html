@@ -1,4 +1,5 @@
 <br/>
+
 <div class="container-fluid row row-cols-md-12 g-4">
 	<div class="col-7">
 	  <div class="card h-100">
@@ -23,10 +24,6 @@
 						<td>{{order.item.qty}}</td>
 						<td>{{order.customer_name}}</td>
 						<td>
-							<!--
-							<button type="button" class="btn btn-outline-success actions"><i class="bi bi-info-circle"></i>&nbsp; View</button>
-							&nbsp;
-							-->
 							<button type="button" class="btn btn-outline-warning actions" [routerLink]="['/orders', order.id]"><i class="bi bi-pencil-square"></i>&nbsp; Edit</button>
 							&nbsp;
 							<button type="button" class="btn btn-outline-danger actions"><i class="bi bi-trash"></i>&nbsp; Delete</button>
@@ -37,7 +34,8 @@
 		</div>
 	  </div>
 	</div>
-	<div class="col-5">
+
+<div class="col-5">
 	  <div class="card h-100">
 		<div class="card-body">
 			<h4>{{slist}}</h4>

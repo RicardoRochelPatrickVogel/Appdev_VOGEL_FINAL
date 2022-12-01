@@ -1,6 +1,6 @@
-import { orderParent } from './order';
+import { Order } from './order';
 
-export const orderChild: orderParent[] = [
+export const ORDER: Order[] = [
     {
 		id: 1,
 		item: {

@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 import { map } from "rxjs/operators";
 import { Observable, of } from "rxjs";
 import { Router } from "@angular/router";
-import { orderParent } from "./order";
-import { orderChild } from "./order-list";
+import { Order } from "./order";
+import { ORDER } from "./order-list";
 
 @Injectable({
     providedIn: 'root'
@@ -14,19 +14,19 @@ export class OrderService {
 
     ) { }
 
-    getOrders(): Observable<orderParent []> {
-        return of (orderChild);
+    getOrders(): Observable<Order []> {
+        return of (ORDER);
     }
 
     getordersParent(id: number | string){
         return this.getOrders().pipe(
-            map ((orders: orderParent[])=>
+            map ((orders: Order[])=>
             orders.find (order =>order.id === +id)!)
         );
     }
     getOrder() {
         throw new Error("Method not implemented.");
     }
-    addOrder(order : orderParent){ }
+    addOrder(order : Order){ }
     clearOrder() {}
 }
