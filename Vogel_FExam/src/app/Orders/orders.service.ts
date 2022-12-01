@@ -25,7 +25,7 @@ export class OrderService {
         );
     }
     getOrder() {
-        throw new Error("Method not implemented.");
+        throw new Error("Error");
     }
     addOrder(order : Order){ }
     clearOrder() {}
