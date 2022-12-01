@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Location } from '@angular/common';
 
 import { AccountService } from '../accounts.service';
-import { accountParent } from '../account';
+import { Account } from '../account';
 
 
 @Component({
@@ -15,7 +15,7 @@ import { accountParent } from '../account';
 })
 export class AccountsViewDetailsComponent implements OnInit {
 
-  accounts$!: Observable<accountParent>
+  accounts$!: Observable<Account>
 
   constructor(
     private route:ActivatedRoute,
@@ -30,7 +30,7 @@ export class AccountsViewDetailsComponent implements OnInit {
       this.accountService.getaccountsParent(params.get('id')!))
     );
   }
-  gotoAccount(account: accountParent) {
+  gotoAccount(account: Account) {
   const accountId = account ? account.id : null;
   this.router.navigate(['/account', {id: accountId, foo: 'foo'}]);
   }

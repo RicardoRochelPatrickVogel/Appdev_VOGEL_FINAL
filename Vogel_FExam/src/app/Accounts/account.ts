@@ -1,4 +1,4 @@
-export interface accountParent {
+export interface Account {
     id: number;
 	photo?: string;
 	firstname: string;

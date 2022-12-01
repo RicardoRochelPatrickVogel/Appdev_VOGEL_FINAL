@@ -1,6 +1,6 @@
-import { accountParent } from './account';
+import { Account } from './account';
 
-export const accountChild: accountParent[] = [
+export const ACCOUNT: Account[] = [
     {
 	    id: 1,
 		/* https://media-exp1.licdn.com/dms/image/C5103AQEz5Og9JJGOSA/profile-displayphoto-shrink_800_800/0/1547727459189?e=2147483647&v=beta&t=FP6WIv0WtitA4CnPhPPttIdgpNmB35U5upOfN3L19Fc */

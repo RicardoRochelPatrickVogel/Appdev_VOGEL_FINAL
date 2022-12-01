@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AccountService } from '../accounts.service';
 
-import { accountParent } from '../account';
+import { Account } from '../account';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
@@ -15,11 +15,11 @@ import { switchMap } from 'rxjs/operators';
 export class AccountsViewListComponent implements OnInit{
   
   title = 'Accounts List';
-  account$!: Observable<accountParent []>;
+  account$!: Observable<Account []>;
 
-  account: accountParent[] = [];
+  account: Account[] = [];
 
-  selectAccount?: accountParent;
+  selectAccount?: Account;
 
   SelectedId = 0;
 

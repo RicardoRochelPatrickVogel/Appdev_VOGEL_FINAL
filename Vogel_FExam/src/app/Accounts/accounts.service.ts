@@ -2,8 +2,8 @@ import { Injectable } from "@angular/core";
 import { map } from "rxjs/operators";
 import { Observable, of } from "rxjs";
 import { Router } from "@angular/router";
-import { accountParent } from "./account";
-import { accountChild } from "./account-list";
+import { Account } from "./account";
+import { ACCOUNT } from "./account-list";
 
 @Injectable({
     providedIn: 'root'
@@ -14,19 +14,19 @@ export class AccountService {
 
     ) { }
 
-    getAccounts(): Observable<accountParent []> {
-        return of (accountChild);
+    getAccounts(): Observable<Account []> {
+        return of (ACCOUNT);
     }
 
     getaccountsParent(id: number | string){
         return this.getAccounts().pipe(
-            map ((accounts: accountParent[])=>
+            map ((accounts: Account[])=>
             accounts.find (account =>account.id === +id)!)
         );
     }
     getAccount() {
-        throw new Error("Method not implemented.");
+        throw new Error("Error");
     }
-    addAccount(account : accountParent){ }
+    addAccount(account : Account){ }
     clearAccount() {}
 }
