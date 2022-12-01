@@ -1,0 +1,64 @@
+<br/>
+<div class="container-fluid row row-cols-md-12 g-4">
+	<div class="col-7">
+	  <div class="card h-100">
+		<div class="card-body">
+			<h4>{{olist}}</h4>
+			<table class="table table-bordered text-center">
+				<thead class="txt">
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Item Name</th>
+						<th scope="col">Unit Price</th>
+						<th scope="col">Quantity</th>
+						<th scope="col">Customer Name</th>
+						<th scope="col">ACTIONS</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let order of order$ | async" [class.selected]="order.id === SelectedId">
+						<th scope="row">{{order.id}}</th>
+						<td>{{order.item.name}}</td>
+						<td>{{order.item.unit_price}}</td>
+						<td>{{order.item.qty}}</td>
+						<td>{{order.customer_name}}</td>
+						<td>
+							<!--
+							<button type="button" class="btn btn-outline-success actions"><i class="bi bi-info-circle"></i>&nbsp; View</button>
+							&nbsp;
+							-->
+							<button type="button" class="btn btn-outline-warning actions" [routerLink]="['/orders', order.id]"><i class="bi bi-pencil-square"></i>&nbsp; Edit</button>
+							&nbsp;
+							<button type="button" class="btn btn-outline-danger actions"><i class="bi bi-trash"></i>&nbsp; Delete</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	  </div>
+	</div>
+	<div class="col-5">
+	  <div class="card h-100">
+		<div class="card-body">
+			<h4>{{slist}}</h4>
+			<table class="table table-bordered text-center">
+				<thead class="txt">
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Customer Name</th>
+						<th scope="col">Address</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let order of order$ | async" [class.selected]="order.id === SelectedId">
+						<th scope="row">{{order.id}}</th>
+						<td>{{order.customer_name}}</td>
+						<td>{{order.shipping_address.street}}&nbsp;{{order.shipping_address.barangay}},&nbsp;{{order.shipping_address.city}},&nbsp;{{order.shipping_address.province}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	  </div>
+	</div>
+</div>
+<br/>
