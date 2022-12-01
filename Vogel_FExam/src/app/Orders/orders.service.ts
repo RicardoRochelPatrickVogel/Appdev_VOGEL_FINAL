@@ -18,7 +18,7 @@ export class OrderService {
         return of (ORDER);
     }
 
-    getordersParent(id: number | string){
+    getorder(id: number | string){
         return this.getOrders().pipe(
             map ((orders: Order[])=>
             orders.find (order =>order.id === +id)!)

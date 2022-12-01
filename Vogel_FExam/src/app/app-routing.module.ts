@@ -8,6 +8,8 @@ import { OrdersViewDetailsComponent } from './Orders/orders-view-details/orders-
 import { OrdersViewListComponent } from './Orders/orders-view-list/orders-view-list.component';
 import { SelectivePreLoadingStategyService } from './selective-preloading-strategy.service';
 
+
+
 const appRoutes: Routes = [
   { path: '', redirectTo: '/account', pathMatch: 'full' },
   {path: 'navbar', component: NavbarComponent},
@@ -15,6 +17,7 @@ const appRoutes: Routes = [
   {path: 'accounts-details', component: AccountsViewDetailsComponent},
   {path: 'orders-list', component: OrdersViewListComponent},
   {path: 'orders-details', component: OrdersViewDetailsComponent}
+
 ];
 
 @NgModule({

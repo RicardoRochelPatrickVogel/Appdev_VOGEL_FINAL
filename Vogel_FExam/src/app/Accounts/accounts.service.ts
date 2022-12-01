@@ -18,7 +18,7 @@ export class AccountService {
         return of (ACCOUNT);
     }
 
-    getaccountsParent(id: number | string){
+    getaccount(id: number | string){
         return this.getAccounts().pipe(
             map ((accounts: Account[])=>
             accounts.find (account =>account.id === +id)!)

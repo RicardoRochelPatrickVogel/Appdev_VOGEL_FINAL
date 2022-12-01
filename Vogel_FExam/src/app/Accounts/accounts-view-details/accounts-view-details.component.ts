@@ -27,7 +27,7 @@ export class AccountsViewDetailsComponent implements OnInit {
   ngOnInit(): void {
     this.accounts$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap)=>
-      this.accountService.getaccountsParent(params.get('id')!))
+      this.accountService.getaccount(params.get('id')!))
     );
   }
   gotoAccount(account: Account) {
