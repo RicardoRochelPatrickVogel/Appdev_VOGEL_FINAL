@@ -21,6 +21,7 @@ export const ORDER: Order[] = [
 			province: 'Tarlac',
 		}
 	},
+
 	{
 		id: 2,
 		item: {
@@ -41,6 +42,7 @@ export const ORDER: Order[] = [
 			province: 'tarlac',
 		}
 	},
+
 	{
 		id: 3,
 		item: {
@@ -61,6 +63,7 @@ export const ORDER: Order[] = [
 			province: 'Pampanga',
 		}
 	},
+
 	{
 		id: 4,
 		item: {
@@ -81,6 +84,7 @@ export const ORDER: Order[] = [
 			province: 'Tarlac',
 		}
 	},
+
 	{
 		id: 5,
 		item: {
@@ -101,6 +105,7 @@ export const ORDER: Order[] = [
 			province: 'Tarlac',
 		}
 	},
+
 	{
 		id: 6,
 		item: {
@@ -121,6 +126,7 @@ export const ORDER: Order[] = [
 			province: 'Pangasinan',
 		}
 	},
+	
 	{
 		id: 7,
 		item: {
@@ -141,6 +147,7 @@ export const ORDER: Order[] = [
 			province: 'Nueva Ecija',
 		}
 	},
+
 	{
 		id: 8,
 		item: {
@@ -161,6 +168,7 @@ export const ORDER: Order[] = [
 			province: 'Florida',
 		}
 	},
+
 	{
 		id: 9,
 		item: {
@@ -181,6 +189,7 @@ export const ORDER: Order[] = [
 			province: 'sa carlos',
 		}
 	},
+	
 	{
 		id: 10,
 		item: {
