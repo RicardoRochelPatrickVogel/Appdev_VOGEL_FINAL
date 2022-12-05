@@ -14,7 +14,7 @@ import { AccountRoutingModule } from './accounts-routing.module';
   ],
   declarations: [
     AccountsViewListComponent,
-    AccountsViewDetailsComponent,
+    AccountsViewDetailsComponent
   ]
 })
 export class AccountModule {}

@@ -9,6 +9,9 @@ import { ORDER } from "./order-list";
     providedIn: 'root'
 })
 export class OrderService {
+    updateAccount(order: Order) {
+      throw new Error('Method not implemented.');
+    }
     constructor(
         private router: Router,
 
@@ -25,7 +28,7 @@ export class OrderService {
         );
     }
     getOrder() {
-        throw new Error("Error");
+        throw new Error("Method not implemented.");
     }
     addOrder(order : Order){ }
     clearOrder() {}

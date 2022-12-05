@@ -3,7 +3,9 @@
 	<div class="col-12">
 		<div class="card h-100">
 		  	<div class="card-body">
-				<h4>{{title}}</h4>
+				<br/>
+				<h4 class="text-center">{{Title}}</h4>				
+				<br/>
 				<table class="table table-bordered text-center">
 					<thead class="txt">
 						<tr>
@@ -15,21 +17,27 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr *ngFor="let account of account$ | async" [class.selected]="account.id === SelectedId">
+						<tr *ngFor="let account of account">
 							<th scope="row">{{account.id}}</th>
 							<td>{{account.firstname}}&nbsp;{{account.lastname}}</td>
 							<td>{{account.gender}}</td>
 							<td>{{account.date_of_birth}}</td>
-							<td>
-								<button type="button" class="btn btn-success" [routerLink]="['/accounts', account.id]"><i class="bi bi-info-circle"></i>&nbsp; View</button>
+							<td>	
+								<button type="button" class="btn btn-success actions" [routerLink]="['/accounts', account.id]">View</button>
 								&nbsp;
-								<button type="button" class="btn btn-warning" [routerLink]="['/accounts', account.id]"><i class="bi bi-pencil-square"></i>&nbsp; Edit</button>
+								<button type="button" class="btn btn-warning actions" [routerLink]="['/accounts', account.id]">Edit</button>
 								&nbsp;
-								<button type="button" class="btn btn-danger"><i class="bi bi-trash"></i>&nbsp; Delete</button>
+								<button type="button" class="btn btn-danger actions" (click)="delete(account)">Delete</button>
 							</td>
 						</tr>
 					</tbody>
 				</table>
+
+				<div class="input-group mb-3">
+					<button type="button" class="btn btn-success" (click)="add(title.value); title.value=''">Add Account:</button>
+					<input type="text" class="form-control" placeholder="Add Account" aria-label="" aria-describedby="basic-addon1" #title>
+				</div>
+
 			</div>
 		</div>
 	</div>

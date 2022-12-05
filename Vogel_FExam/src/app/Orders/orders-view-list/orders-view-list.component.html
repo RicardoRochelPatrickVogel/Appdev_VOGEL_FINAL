@@ -1,5 +1,4 @@
 <br/>
-
 <div class="container-fluid row row-cols-md-12 g-4">
 	<div class="col-7">
 	  <div class="card h-100">
@@ -24,9 +23,9 @@
 						<td>{{order.item.qty}}</td>
 						<td>{{order.customer_name}}</td>
 						<td>
-							<button type="button" class="btn btn-warning" [routerLink]="['/orders', order.id]"><i class="bi bi-pencil-square"></i>&nbsp; Edit</button>
+							<button type="button" class="btn btn-success actions" [routerLink]="['/orders', order.id]">View</button>
 							&nbsp;
-							<button type="button" class="btn btn-danger"><i class="bi bi-trash"></i>&nbsp; Delete</button>
+							<button type="button" class="btn btn-danger actions">Delete</button>
 						</td>
 					</tr>
 				</tbody>
@@ -34,8 +33,7 @@
 		</div>
 	  </div>
 	</div>
-
-<div class="col-5">
+	<div class="col-5">
 	  <div class="card h-100">
 		<div class="card-body">
 			<h4>{{slist}}</h4>

@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import { AccountService } from '../accounts.service';
-
 import { Account } from '../account';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-accounts-view-list',
@@ -14,27 +10,41 @@ import { switchMap } from 'rxjs/operators';
 })
 export class AccountsViewListComponent implements OnInit{
   
-  title = 'Accounts List';
-  account$!: Observable<Account []>;
+  Title = 'Accounts List';
 
   account: Account[] = [];
 
   selectAccount?: Account;
 
-  SelectedId = 0;
-
   constructor(
-    private service: AccountService,
-    private router: Router,
-    private route: ActivatedRoute){
-    }
+    private service: AccountService) { }
 
   ngOnInit(): void {
-      this.account$ = this.route.paramMap.pipe(
-          switchMap(params =>{
-            this.SelectedId = parseInt(params.get('id')!, 6);
-            return this.service.getAccounts();
-          })
-      );
+    this.getAccounts();
+  }
+
+  add(firstname: string): void{
+    firstname = firstname.trim();
+    if(!firstname){ return; }
+    this.service.addAccount({ firstname } as Account)
+    .subscribe(account =>{
+      this.account.push(account);
+    });
+  }
+
+  delete(account: Account): void{
+    this.confirmDelete();
+    this.account = this.account.filter(m => m !== account);
+    this.service.deleteAccount(account.id)
+      .subscribe();
+  }
+
+  confirmDelete(){
+    alert('Are you sure you want to delete this account to your list?');
+  }
+
+  getAccounts(): void{
+    this.service.getAccounts().
+    subscribe(account => this.account = account);
   }
 }

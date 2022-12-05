@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'VOGEL_FExam'`, () => {
+  it(`should have as title 'Vogel_FExam'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('VOGEL_FExam');
+    expect(app.title).toEqual('Vogel_FExam');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('VOGEL_FExam app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Vogel_FExam app is running!');
   });
 });

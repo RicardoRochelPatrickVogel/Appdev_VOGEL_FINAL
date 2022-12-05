@@ -6,199 +6,199 @@ export const ORDER: Order[] = [
 		item: {
 			name: 'Red Horse',
 			description: 'Beer',
-			unit_price: '60',
-			qty: '500',
+			unit_price: '65',
+			qty: '40',
 		},
 		customer_name: 'Hairon',
 		customer_contact_details: {
-			email: 'hairon@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Haironbaron@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '169',
-			barangay: 'Estarada',
-			city: 'Tarlac',
-			province: 'Philippines',
+			street: 'Gumamela',
+			barangay: 'Cutcut2nd',
+			city: 'Capas',
+			province: 'Tarlac',
 		}
 	},
 	{
 		id: 2,
 		item: {
-			name: 'Bacardi',
-			description: 'Rum',
-			unit_price: '145',
-			qty: '10',
+			name: 'Emperador',
+			description: 'Ram',
+			unit_price: '165',
+			qty: '1',
 		},
-		customer_name: 'Heiron',
+		customer_name: 'Jay',
 		customer_contact_details: {
-			email: 'heiron@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Jaymark@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '170',
-			barangay: 'susuba',
-			city: 'Bamban',
-			province: 'Mabalacat',
+			street: '163',
+			barangay: 'Conception',
+			city: 'Capas',
+			province: 'tarlac',
 		}
 	},
 	{
 		id: 3,
 		item: {
-			name: 'Red Label',
-			description: 'Rum',
-			unit_price: '1400',
-			qty: '100',
+			name: 'Pierra',
+			description: 'Wine',
+			unit_price: '500',
+			qty: '24',
 		},
-		customer_name: 'Hiron',
+		customer_name: 'Max',
 		customer_contact_details: {
-			email: 'hiron@yahoo.com',
-			phone_number: '0912850515'
+			email: 'MaxVogel@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '171',
-			barangay: 'Telebastagan',
-			city: 'Angeles',
+			street: '167',
+			barangay: 'Bamban',
+			city: 'Mabalacat',
 			province: 'Pampanga',
 		}
 	},
 	{
 		id: 4,
 		item: {
-			name: 'Coca-Cola',
-			description: 'Soft Drinks',
-			unit_price: '70',
-			qty: '50',
+			name: 'iphone',
+			description: 'Apple',
+			unit_price: '5000',
+			qty: '1',
 		},
-		customer_name: 'Hoiron',
+		customer_name: 'Rolf',
 		customer_contact_details: {
-			email: 'hoiron@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Rolfvogel@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '172',
-			barangay: 'Arayat',
-			city: 'Subic',
-			province: 'Pampanga',
+			street: '168',
+			barangay: 'Lutgarda',
+			city: 'cutcut1st',
+			province: 'Tarlac',
 		}
 	},
 	{
 		id: 5,
 		item: {
-			name: 'Reno',
-			description: 'Liver Spread',
-			unit_price: '20',
-			qty: '120',
+			name: 'Tbone',
+			description: 'Meat',
+			unit_price: '1000',
+			qty: '26',
 		},
-		customer_name: 'Huiron',
+		customer_name: 'Ivy',
 		customer_contact_details: {
-			email: 'huiron@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Ivy@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '173',
-			barangay: 'Conception',
-			city: 'Lele bangin',
-			province: 'Urdaneta',
+			street: 'blk1',
+			barangay: 'brgy. Estrada',
+			city: 'Capas',
+			province: 'Tarlac',
 		}
 	},
 	{
 		id: 6,
 		item: {
-			name: 'Century',
-			description: 'Tuna',
-			unit_price: '25',
-			qty: '125',
+			name: 'Coca-Cola',
+			description: 'softdrinks',
+			unit_price: '70',
+			qty: '50',
 		},
-		customer_name: 'Boris',
+		customer_name: 'Alex',
 		customer_contact_details: {
-			email: 'Boris@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Alex@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '168',
-			barangay: 'Gumamela street',
-			city: 'Donalutgarda',
-			province: 'Tarlac',
+			street: '124',
+			barangay: 'Susuba',
+			city: 'Bataan',
+			province: 'Pangasinan',
 		}
 	},
 	{
 		id: 7,
 		item: {
-			name: 'McDo',
-			description: 'Happy Meal',
-			unit_price: '154',
-			qty: '1',
+			name: 'Twix',
+			description: 'Chocolate',
+			unit_price: '60',
+			qty: '500',
 		},
-		customer_name: 'Max',
+		customer_name: 'Oliver',
 		customer_contact_details: {
-			email: 'Max@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Oliver@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '167',
-			barangay: 'Rosas street',
-			city: 'Lutgarda',
-			province: 'Capas',
+			street: '500',
+			barangay: 'Sto Domingo',
+			city: 'Baguio',
+			province: 'Nueva Ecija',
 		}
 	},
 	{
 		id: 8,
 		item: {
-			name: 'Pizza hat',
-			description: 'Pizza',
-			unit_price: '145',
+			name: 'Aorus rtx 3060',
+			description: 'Video Card',
+			unit_price: '6000',
 			qty: '1',
 		},
-		customer_name: 'Keribelle',
+		customer_name: 'Loida',
 		customer_contact_details: {
-			email: 'keribelle@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Loida@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: '166',
-			barangay: 'Sunflower street',
-			city: 'Cub-cub1st',
-			province: 'Tarlac',
+			street: '592',
+			barangay: 'Lawy',
+			city: 'Angeles',
+			province: 'Florida',
 		}
 	},
 	{
 		id: 9,
 		item: {
-			name: 'Asus',
-			description: 'Laptop',
-			unit_price: '40000',
-			qty: '1',
+			name: 'Raze ornata',
+			description: 'Keyboard',
+			unit_price: '224',
+			qty: '2',
 		},
-		customer_name: 'Jay',
+		customer_name: 'Boris',
 		customer_contact_details: {
-			email: 'jay@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Boris@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: 'sto odmingo',
-			barangay: 'conception',
-			city: 'capas',
-			province: 'tarlac',
+			street: '862',
+			barangay: 'San jose',
+			city: 'san juan',
+			province: 'sa carlos',
 		}
 	},
 	{
 		id: 10,
 		item: {
-			name: 'Apple',
-			description: 'Cellphone',
-			unit_price: '5000',
-			qty: '2',
+			name: 'Century',
+			description: 'Tuna',
+			unit_price: '60',
+			qty: '124',
 		},
-		customer_name: 'Paul',
+		customer_name: 'Keribele',
 		customer_contact_details: {
-			email: 'Paul@yahoo.com',
-			phone_number: '0912850515'
+			email: 'Keribele@yahoo.com',
+			phone_number: '099557406333'
 		},
 		shipping_address: {
-			street: 'bamban',
-			barangay: 'brookside',
-			city: 'mabalacat',
-			province: 'Pampanga',
+			street: '291',
+			barangay: 'Cutcut2nd',
+			city: 'Bamban',
+			province: 'Tarlac',
 		}
 	},
 ]

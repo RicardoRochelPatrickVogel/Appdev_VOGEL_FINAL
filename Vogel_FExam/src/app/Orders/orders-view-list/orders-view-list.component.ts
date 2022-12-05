@@ -25,7 +25,7 @@ export class OrdersViewListComponent implements OnInit{
   SelectedId = 0;
 
   constructor(
-    private Orderservice: OrderService,
+    private service: OrderService,
     private router: Router,
     private route: ActivatedRoute){
     }
@@ -34,7 +34,7 @@ export class OrdersViewListComponent implements OnInit{
       this.order$ = this.route.paramMap.pipe(
           switchMap(params =>{
             this.SelectedId = parseInt(params.get('id')!, 6);
-            return this.Orderservice.getOrders();
+            return this.service.getOrders();
           })
       );
   }
